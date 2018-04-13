@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aprendiendo formularios en HTML5</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1>Formularios</h1>
+  <form action="https://formspree.io/leyder.gil@gmail.com" method="post">
+    <!-- INPUTS Y LABELS -->
+    <input type="hidden" name="algo oculto" id="oculto" value="Esto es un mensaje de soporte">
+    <p>
+      <label for="nombreid">Nombre:</label>
+      <input type="text" name="nombre" id="nombreid" placeholder="Ingrese su nombre" size="50" required>
+    </p>
+    <p>
+      <label for="apellidoid">Apellidos:</label>
+      <input type="text" name="apellido" id="apellidoid" placeholder="Ingrese su apellido" size="50" >
+    </p>
+    <p>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="Ingrese su email">
+    </p>
+    <p>
+      <label for="fecha">Fecha:</label>
+      <input type="date" name="fecha" id="fecha" placeholder="Ingrese su fecha de nacimiento">
+    </p>
+      <!-- CHECBOX -->
+    <p>
+      <input type="checkbox" name="urgente" id="urgente" value="urgente" checked>
+      <label for="urgente">Marca si es urgente</label>
+    </p>
+      <!-- RADIO BUTTON -->
+    <p>
+      <label for="">Asunto</label>
+    <!-- El label con su atributo for="igual al id del input" me sirve para que al dar click en el texto al lado del input este se marque-->
+      <br>
+      <input type="radio" name="asunto" id="error" value="Error encontrado"> <label for="error">Error encontrado</label>
+      <br>
+      <input type="radio" name="asunto" id="soporte" value="Soporte" checked> <label for="soporte">Soporte</label>
+      <br>
+      <input type="radio" name="asunto" id="sugerencia" value="Sugerencia de mejora"> <label for="sugerencia">Sugerencia de Mejora</label>
+      <br>
+      <input type="radio" name="asunto" id="pregunta" value="Pregunta"> <label for="pregunta">Pregunta</label>
+    </p>
+    <p>
+      <!-- Etiqueta para Hacer listas desplegables select-->
+      <label for="so">Sistema Operativo</label>
+      <select name="Sistema Operativo" id="so">
+        <option value="windows">Windows</option>
+        <option value="linux">Linux</option>
+        <option value="mac" selected>Mac OSX</option>
+      </select>
+    </p>
+    <p>
+      <label for="comentarios">Comentarios:</label>
+      <br>
+      <!-- Etiqueta para Hacer Campos de texto de multiples ineas textarea-->
+      <textarea name="name" id="comentarios" rows="6" cols="40" placeholder="Ingresa tu comentario"></textarea>
+    </p>
+    <p>
+      <label for="url">URL Relacionada:</label>
+      <input type="url" name="url" id="url" placeholder="Ingrese su url relacionada" size="70" pattern="http:\/\/.+">
+    </p>
+    <p>
+      <label for="horarespuesta">Respuesta hasta:</label>
+      <input type="time" name="horarespuesta" id="horarespuesta" placeholder="Hora para la respuesta">
+    </p>
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Borrar todo">
+    </p>
+  </form>
+</body>
+</html>
