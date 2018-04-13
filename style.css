@@ -4,3 +4,14 @@ input:valid{
   input:invalid{
     border: 2px solid red;
     }
+body{
+  color: white;
+  background-color: #666666;
+}
+
+p{
+  color: #ddddff;
+}
+h1{
+  color: #ffff99;
+}
